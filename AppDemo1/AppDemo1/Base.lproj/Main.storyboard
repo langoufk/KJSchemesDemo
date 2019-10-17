@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyS-2U-rsM">
+                                <rect key="frame" x="266" y="200" width="68" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="button"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchDown" id="z4f-gK-BMa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示其他App传递的数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaE-lV-TbY">
+                                <rect key="frame" x="206.5" y="281" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aq-Ih-Mwj">
+                                <rect key="frame" x="279" y="342" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6aq-Ih-Mwj" firstAttribute="top" secondItem="vaE-lV-TbY" secondAttribute="bottom" constant="40" id="5yE-4u-AzZ"/>
+                            <constraint firstItem="QyS-2U-rsM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AZY-n0-KeD"/>
+                            <constraint firstItem="QyS-2U-rsM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="AbL-MO-PYU"/>
+                            <constraint firstItem="vaE-lV-TbY" firstAttribute="top" secondItem="QyS-2U-rsM" secondAttribute="bottom" constant="40" id="Wlg-l3-Ox9"/>
+                            <constraint firstItem="vaE-lV-TbY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wxz-n6-Kmt"/>
+                            <constraint firstItem="6aq-Ih-Mwj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p2R-zd-Z8o"/>
+                            <constraint firstItem="QyS-2U-rsM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u7M-ZH-MjK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="6aq-Ih-Mwj" id="ivh-1x-Oab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="433"/>
+        </scene>
+    </scenes>
+</document>
